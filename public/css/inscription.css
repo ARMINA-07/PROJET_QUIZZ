@@ -1,0 +1,38 @@
+.panel-title{
+    height:80px;
+    background-color: #E92929;
+    color: white;
+    padding: 30px;
+
+}  
+    
+   
+   
+   
+   
+
+#login-username{
+    height: 55px;
+}      
+#login-password{
+    height: 55px;
+} 
+#gana{
+    text-align: center;
+    background-color: #E92929;
+    height: 200px;
+    color: white ;
+    padding: 70px;
+} 
+#header{
+   color: #E92929;
+
+}      
+#title{
+   color:#E92929 ;
+
+}   
+
+.container{
+    margin-left: 3%;
+}

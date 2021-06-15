@@ -1,0 +1,19 @@
+
+[
+    {
+        "nom": "test1",
+        "prenom": "test2",
+        "age": "03\/01\/2002",
+        "login": "admin@gmail.com",
+        "password": "admin@1",
+        "role": "ROLE_ADMIN"
+    },
+    {
+        "nom": "test1",
+        "prenom": "test2",
+        "age": "03\/01\/2002",
+        "login": "joueur@gmail.com",
+        "password": "joueur@1",
+        "role": "ROLE_JOUEUR"
+    }
+]
