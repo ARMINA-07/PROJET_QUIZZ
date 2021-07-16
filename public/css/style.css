@@ -1,0 +1,140 @@
+.panel-title{
+    height:80px;
+    background-color: #E92929;
+    color: white;
+    padding: 30px;
+
+}  
+
+.login-username{
+    height: 55px;
+    width: 60%;
+}      
+#login-password{
+    height: 55px;
+} 
+.gana{
+    text-align: center;
+    background-color: #E92929;
+    height: 200px;
+    width: 2000px;
+    color: white ;
+    float: right;
+} 
+#header{
+   color: #E92929;
+
+}      
+#title{
+   color:#E92929 ;
+
+}   
+
+.container{
+    margin-left: 5%;
+}
+
+
+.panel-title{
+    height:80px;
+    background-color: #E92929;
+    color: white;
+    padding: 30px;
+
+}  
+#btn-login{
+    background-color:#E92929 ;
+    height: 55px;
+    width: 25%;
+    padding: 18px;
+}     
+#username{
+    height: 55px;
+}      
+#password{
+    height: 55px;
+} 
+
+
+.vertical-menu {
+    width: 400px; /* Set a width if you like */
+    margin-left: 3%;
+  }
+  
+  .vertical-menu a {
+    background-color: #FFFFFF; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 10px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+    height: 75px;
+  }
+  
+  
+  .active{
+      height: 100px;
+      padding: 80px;
+      background-color:#c4c4c4 ;
+      color: white ;
+
+  }
+  .mama{
+    text-align: center;
+    background-color: #c4c4c4;
+    height: 70px;
+    color: white ;
+    padding: 70px;
+    background-color: #c4c4c4; /* Add a green color to the "active/current" link */
+    width: 2000px;
+
+
+  }
+  .icon{
+      display: flex;
+  }
+  #menu1{
+    width: 50px;
+    height: 50px;
+    margin-left: 60%;
+
+  }
+  #menu2{
+    width: 50px;
+    height: 50px;
+    margin-left: 62%;
+
+  }
+  #menu3{
+    width: 50px;
+    height: 50px;
+    margin-left: 62%;
+
+  }
+  #menu4{
+    width: 50px;
+    height: 50px;
+    margin-left: 57%;
+
+  }
+  #menu5{
+    width: 50px;
+    height: 50px;
+    margin-left: 63%;
+
+  }
+  #menu6{
+    width: 50px;
+    height: 50px;
+    margin-left: 55%;
+
+  }
+  .container-fluid{
+      display: flex ;
+  }
+.img-fluid{
+    width: 200px;
+    float: inline-start;
+}
+.table{
+  padding-left: 15%;
+}

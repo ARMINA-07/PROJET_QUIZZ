@@ -116,6 +116,11 @@ function valid_prenom($valeur, string $key,array &$arrayErrors){
         $arrayErrors[$key] = "le prenom est obligatoire ";
     }
 }
+function champs_obligatoire($valeur, string $key,array &$arrayErrors){
+    if (est_vide($valeur)) {
+        $arrayErrors[$key] = "le champs est obligatoire ";
+    }
+}
 
 function valid_date($valeur, string $key,array &$arrayErrors){
     if (est_vide($valeur)) {

@@ -1,36 +1,56 @@
+<?php
+   require_once(ROUTE_DIR.'view/inc/header.html.php');
+   require_once(ROUTE_DIR.'view/inc/footer.html.php');
+   
+  ?>
 
 
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a class="navbar-brand" href="#">Menu</a>
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
-        <?php if (est_admin()):?>
-            <li class="nav-item active">
-                <a class="nav-link" href="<?= WEB_ROUTE.'?controlleurs=admin&view=liste.question'?>">liste des questions <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<?= WEB_ROUTE.'?controlleurs=admin&view=liste.joueur'?>">Liste des joueurs </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<?= WEB_ROUTE.'?controlleurs=security&view=inscription'?>">Creer admin  </a>
-            </li>
-            <?php endif ?>
-            <?php if (est_joueur()):?>
-            <li class="nav-item">
-                <a class="nav-link" href="<?= WEB_ROUTE.'?controlleurs=joueur&view=jeu'?>">Jeu </a>
-            </li>
-            <?php endif ?>
-        </ul>
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <?php if (est_connect()):?>
-            <li class="nav-item active">
-                <a class="nav-link" href="<?= WEB_ROUTE.'?controlleurs=security&view=deconnexion'?>"> Deconnexion<span class="sr-only">(current)</span></a>
-            </li>
-            </ul>
-            <?php endif ?>
-    </div>
-</nav>
+
+<?php if (est_admin()) :?>
+<div class="vertical-menu">
+  <h3 class="active">AAA BBB</h3>
+  <div class="icon">
+    <a href="<?=WEB_ROUTE.'?controlleurs=admin&view=list.question'?>">Liste question</a>
+    <img src="<?= WEB_ROUTE."images/note.jpg"?>"  id="menu1"class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
+  </div>
+  <div class="icon">
+    <a href="<?=WEB_ROUTE.'?controlleurs=admin&view=creer_admin'?>">creer admin</a>
+    <img src="<?= WEB_ROUTE."images/plus.png"?>"  id="menu2"class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
+
+  </div>
+
+  <div class="icon">
+    <a href="<?=WEB_ROUTE.'?controlleurs=admin&view=liste_joueur'?>">Liste joueur</a>
+    <img src="<?= WEB_ROUTE."images/note.jpg"?>"  id="menu3"class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
+
+  </div>
+
+  <div class="icon">
+   <a href="<?=WEB_ROUTE.'?controlleurs=admin&view=creer_question'?>">creer question</a>
+   <img src="<?= WEB_ROUTE."images/plus.png"?>"  id="menu4"class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
+
+  </div>
+
+  <div class="icon">
+    <a href="<?=WEB_ROUTE.'?controlleurs=admin&view=liste_admin'?>">liste admin</a>
+    <img src="<?= WEB_ROUTE."images/note.jpg"?>"  id="menu5"class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
+
+  </div>
+
+  <div class="icon">
+    <a href="#">tableau de bord</a>
+    <img src="<?= WEB_ROUTE."images/note.jpg"?>" id="menu6" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""> 
+
+  </div>
+    <a name="" id="" class=" " href="<?=WEB_ROUTE.'?controlleurs=security&view=deconnexion'?>">Deconnexion</a>
+</div>
+<?php endif ?>
+
+<style>
+  .icon a:hover{
+      background-color: #ddd;
+      color: black;
+      border-left: black 2px solid;
+  }
+</style>
+

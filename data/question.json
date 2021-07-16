@@ -1,0 +1,81 @@
+[
+    {
+        "controlleurs": "admin",
+        "action": "creer_question",
+        "question": "quelle est la premiere ecole de codage gratuite au senegal",
+        "points": "2",
+        "type_reponse": "simple",
+        "nbr_reponse": "3",
+        "reponse0": "Orange center",
+        "reponse1": "ISI",
+        "reponse2": "ecole 221",
+        "enregistrer": ""
+    },
+    {
+        "controlleurs": "admin",
+        "action": "creer_question",
+        "question": "quelle sont les langages du web",
+        "points": "2",
+        "type_reponse": "multiple",
+        "nbr_reponse": "4",
+        "reponse0": "HTML",
+        "reponse1": "CSS",
+        "reponse2": "RAS",
+        "reponse3": "JS",
+        "enregistrer": ""
+    },
+    {
+        "question": "Quel terme designe le langage qui s'adapte sur web et mobile",
+        "points": "4",
+        "type_reponse": "texte",
+        "nbr_reponse": "1",
+        "reponse0": "les mangages"
+    },
+    {
+        "question": "d'ou vient le corona",
+        "points": "2",
+        "type_reponse": "simple",
+        "nbr_reponse": "2",
+        "reponse0": "Chine",
+        "reponse1": "Italie"
+    },
+    {
+        "question": "les precurseurs de la revolution digital",
+        "points": "2",
+        "type_reponse": "simple",
+        "nbr_reponse": "3",
+        "reponse0": "gafam",
+        "reponse1": "innovDigital",
+        "reponse2": "CIA bfi"
+    },
+    {
+        "question": "Quel est la capital du senegal",
+        "points": "2",
+        "type_reponse": "choisir...",
+        "nbr_reponse": "2",
+        "reponse0": "Thies",
+        "reponse1": "Dakar",
+        "id": "60eca3acae61e"
+    },
+    {
+        "question": "jzkzdkzdbzkbzakkaz",
+        "points": "2",
+        "type_reponse": "simple",
+        "nbr_reponse": "2",
+        "reponse0": "jzdjzbjbzdj",
+        "reponse1": "adnzknkadzknadknz",
+        "id": "60eca4bcd3d4a"
+    },
+    {
+        "question": "sqgsqsqgsvq",
+        "points": "4",
+        "type_reponse": "choisir...",
+        "nbr_reponse": "5",
+        "reponse0": "shds",
+        "reponse1": "jjjj",
+        "reponse2": "kkkk",
+        "reponse3": "yyyy",
+        "reponse4": "tttt",
+        "id": "60ed7b7677056"
+    }
+]

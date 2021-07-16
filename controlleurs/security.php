@@ -13,18 +13,18 @@ if ($_SERVER['REQUEST_METHOD']=='GET') {
     }else {
         require_once(ROUTE_DIR.'view/security/connexion.html.php');
     }
-}elseif ($_SERVER['REQUEST_METHOD']=='POST')  {
+}elseif ($_SERVER['REQUEST_METHOD']=='POST'){
     if (isset($_POST['action'])) {
        if ($_POST['action']=='connexion') {
            connexion((string)$_POST['login'],(string)$_POST['password']);
           
        }elseif ($_POST['action']=='inscription') {
-          // unset($_POST['valider']);
+          // unset($_POST['valider']);²&
           // unset($_POST['controlleurs']);
          //  unset($_POST['action']);
         inscription($_POST);
      
-    }
+    }   
     }
 }
 
@@ -47,7 +47,7 @@ function connexion(string $login,string $password):void{
         }else{
             $_SESSION['userConnect']=$user;
             if ($user['role']=='ROLE_ADMIN') {
-                header('location:'.WEB_ROUTE.'?controlleurs=admin&view=liste.question');
+                header('location:'.WEB_ROUTE.'?controlleurs=admin&view=list.question');
             }elseif ($user['role']== 'ROLE_JOUEUR') {
              header('location:'.WEB_ROUTE.'?controlleurs=joueur&view=jeu');
             }
@@ -75,22 +75,36 @@ function inscription( array $data):void{
      validation_password($password,'password',$arrayErrors);
      valid_nom($nom,'nom',$arrayErrors);
      valid_prenom($prenom,'prenom',$arrayErrors);
-     valid_date($age,'age',$arrayErrors);
      if ($password!=$conpassword) {
         $arrayErrors['conpassword']="les deux mots de passe ne sont pas identiques";
        
      }
      if (form_valid($arrayErrors)) {
         // appel du model
-          $data['role']=est_admin()?'ROLE_ADMIN': 'ROLE_JOUEUR';
-          add_user($data);
-           header('location:'.WEB_ROUTE.'?controlleurs=security&view=connexion');
-           
-       
+          $data['role']=est_admin()?'ROLE_ADMIN':'ROLE_JOUEUR';
+         
+        
+          if (est_admin()) {
+             
+            add_user($data);
+            header('location:'.WEB_ROUTE.'?controlleurs=admin&view=liste_admin');
+            
+          }else {
+            add_user($data);
+            header('location:'.WEB_ROUTE.'?controlleurs=security&view=connexion');
+            
+          }
      }else {
-         $_SESSION['arrayErrors']=$arrayErrors;
-         header('location:'.WEB_ROUTE.'?controlleurs=security&view=inscription');
-    }
+         if (!est_admin()) {
+            $_SESSION['arrayErrors']=$arrayErrors;
+            header('location:'.WEB_ROUTE.'?controlleurs=security&view=inscription');
+      
+         }else {
+            $_SESSION['arrayErrors']=$arrayErrors;
+            header('location:'.WEB_ROUTE.'?controlleurs=admin&view=creer_admin');
+         
+         }
+      }
 }
 
 

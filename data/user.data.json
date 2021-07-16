@@ -1,4 +1,3 @@
-
 [
     {
         "nom": "test1",
@@ -15,5 +14,104 @@
         "login": "joueur@gmail.com",
         "password": "joueur@1",
         "role": "ROLE_JOUEUR"
+    },
+    {
+        "controlleurs": "security",
+        "action": "inscription",
+        "nom": "tettdvstvd",
+        "prenom": "vtvftfvztevft",
+        "login": "dhdfjd@jfdn.dnf",
+        "password": "ppppppp",
+        "conpassword": "ppppppp",
+        "valider": "",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "nom": "test1",
+        "prenom": "test2",
+        "age": "03\/01\/2002",
+        "login": "joueur@gmail.com",
+        "password": "joueur@1",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "controlleurs": "security",
+        "action": "inscription",
+        "nom": "tettdvstvd",
+        "prenom": "vtvftfvztevft",
+        "login": "dhdfjd@jfdn.dnf",
+        "password": "ppppppp",
+        "conpassword": "ppppppp",
+        "valider": "",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "nom": "test1",
+        "prenom": "test2",
+        "age": "03\/01\/2002",
+        "login": "joueur@gmail.com",
+        "password": "joueur@1",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "controlleurs": "security",
+        "action": "inscription",
+        "nom": "tettdvstvd",
+        "prenom": "vtvftfvztevft",
+        "login": "dhdfjd@jfdn.dnf",
+        "password": "ppppppp",
+        "conpassword": "ppppppp",
+        "valider": "",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "nom": "test1",
+        "prenom": "test2",
+        "age": "03\/01\/2002",
+        "login": "joueur@gmail.com",
+        "password": "joueur@1",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "controlleurs": "security",
+        "action": "inscription",
+        "nom": "tettdvstvd",
+        "prenom": "vtvftfvztevft",
+        "login": "dhdfjd@jfdn.dnf",
+        "password": "ppppppp",
+        "conpassword": "ppppppp",
+        "valider": "",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "nom": "test1",
+        "prenom": "test2",
+        "age": "03\/01\/2002",
+        "login": "joueur@gmail.com",
+        "password": "joueur@1",
+        "role": "ROLE_JOUEUR"
+    },
+    {
+        "controlleurs": "security",
+        "action": "inscription",
+        "nom": "tettdvstvd",
+        "prenom": "vtvftfvztevft",
+        "login": "dhdfjd@jfdn.dnf",
+        "password": "ppppppp",
+        "conpassword": "ppppppp",
+        "valider": "",
+        "role": "ROLE_JOUEUR"
+    },
+    
+    {
+        "controlleurs": "security",
+        "action": "inscription",
+        "nom": "fbhsjdsj",
+        "prenom": "bshdbjfsjfbj",
+        "login": "shbdfsj@sbd.sdnh",
+        "password": "ppppppp",
+        "conpassword": "ppppppp",
+        "valider": "",
+        "role": "ROLE_ADMIN"
     }
 ]

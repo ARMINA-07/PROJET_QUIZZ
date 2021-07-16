@@ -17,6 +17,11 @@ function find_login_password(string $login, string $password){
    // 2 convertir le json en tableau
   return json_decode($json,true);
  }
+ function find_all_question(){
+  $json =file_get_contents(FILE_QUESTION);
+  // 2 convertir le json en tableau
+ return json_decode($json,true);
+}
 
 
 function add_user(array $user){
@@ -28,6 +33,16 @@ $json = json_encode($arrayUser);
 file_put_contents(FILE_USERS , $json);
  }
 
+function add_question(array $question){
+  $json=file_get_contents(FILE_QUESTION);
+  $question['id']=uniqid();
+   $arrayQuestion= json_decode($json,true);
+    $arrayQuestion[]=$question;
+       //convertir le tableau en json
+ $json = json_encode($arrayQuestion);
+ file_put_contents(FILE_QUESTION , $json);
+  }
+
  function login_exist(string $login):array{
   $arrayUser=find_all_users();
   foreach($arrayUser as $user){
@@ -37,9 +52,29 @@ file_put_contents(FILE_USERS , $json);
    }
   return [];
  }
- 
+ function nombrePage($array,$nombreElement):int{
+   $nombrePage=0;
+   if ((count($array)%$nombreElement)==0) {
+       $nombrePage=(count($array)/$nombreElement);
+   }else{
+    $nombrePage=(count($array)/$nombreElement)+1;
+   }
+   return $nombrePage;
+ } 
 
-  
+ function pagination($array,int $page,int $nombreElement):array{
+   $arrayelement=array();
+   $indiceDepart=($page*$nombreElement)-$nombreElement;
+   $indiceArrivee=$page*$nombreElement;
+   for ($i=$indiceDepart; $i < $indiceArrivee ; $i++) { 
+     if ($i>count($array)) {
+       return $arrayelement;
+     }else {
+        $arrayelement[]=$array[$i];
+     }
+   }
+   return $arrayelement;
+ }
 
 
 ?>
